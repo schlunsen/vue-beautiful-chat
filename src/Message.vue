@@ -107,7 +107,7 @@ export default {
   }
 }
 </script>
-<style lang="scss">
+<style lang="stylus">
 .sc-message {
   width: 300px;
   margin: auto;

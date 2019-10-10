@@ -27,8 +27,6 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
     "img-loader": "^3.0.1",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^6.0.7",
     "standard": "^11.0.0",
     "uglifyjs-webpack-plugin": "^1.2.2",
     "url-loader": "^1.1.2",
@@ -63,6 +61,8 @@
     "eslint-plugin-node": "^8.0.1",
     "imagemin": "^6.1.0",
     "msgdown": "^1.0.2",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
     "v-tooltip": "^2.0.1"
   }
 }
