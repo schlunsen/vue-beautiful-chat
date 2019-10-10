@@ -14,7 +14,7 @@ const Plugin = {
     }
 
     this.installed = true
-    this.event = ne2 Vue()
+    this.event = new Vue()
     this.dynamicContainer = null
     this.componentName = options.componentName || defaultComponentName
     /**
