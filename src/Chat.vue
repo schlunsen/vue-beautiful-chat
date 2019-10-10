@@ -29,14 +29,12 @@
 
 
 <script>
-
-
 import { WSController } from "./WSController.js";
 
-import CloseIcon from "vue-beautiful-chat/src/assets/close-icon.png";
-import OpenIcon from "vue-beautiful-chat/src/assets/logo-no-bg.svg";
-import FileIcon from "vue-beautiful-chat/src/assets/file.svg";
-import CloseIconSvg from "vue-beautiful-chat/src/assets/close.svg";
+import CloseIcon from "./assets/close-icon.png";
+import OpenIcon from "./assets/logo-no-bg.svg";
+import FileIcon from "./assets/file.svg";
+import CloseIconSvg from "./assets/close.svg";
 
 export default {
   name: "chat",
