@@ -1,7 +1,7 @@
 <template>
   <div>
     <transition name="fade">
-      <beautiful-chat
+      <Launcher
         v-if="showChat"
         :participants="participants"
         :titleImageUrl="titleImageUrl"
@@ -22,7 +22,7 @@
         @edit="editMessage"
       >
         <template v-slot:header>{{participants.map(m=>m.name).join(' & ')}}</template>
-      </beautiful-chat>
+      </Launcher>
     </transition>
   </div>
 </template>
@@ -30,11 +30,11 @@
 
 <script>
 import { WSController } from "./WSController.js";
-
-const CloseIcon = require("./assets/close-icon.png");
-const OpenIcon = require("./assets/logo-no-bg.svg");
-const FileIcon = require("./assets/file.svg");
-const CloseIconSvg = require("./assets/close.svg")
+import Launcher from './Launcher.vue'
+import CloseIcon from "./assets/close-icon.png";
+import OpenIcon from "./assets/logo-no-bg.svg";
+import FileIcon from "./assets/file.svg";
+import CloseIconSvg from "./assets/close.svg";
 
 export default {
   name: "chat",
@@ -132,6 +132,9 @@ export default {
       alwaysScrollToBottom: false, // when set to true always scrolls the chat to the bottom when new events are in (new message, user starts typing...)
       messageStyling: true // enables *bold* /emph/ _underline_ and such (more info at github.com/mattezza/msgdown)
     };
+  },
+  components: {
+    Launcher
   },
   methods: {
     sendMessage(text) {
