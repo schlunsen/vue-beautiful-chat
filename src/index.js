@@ -1,5 +1,6 @@
 import Launcher from './Launcher.vue'
 import VTooltip from 'v-tooltip'
+import Chat from './Chat.vue'
 
 const defaultComponentName = 'beautiful-chat'
 
@@ -28,6 +29,7 @@ const Plugin = {
      * Sets custom component name (if provided)
      */
     Vue.component(this.componentName, Launcher)
+    Vue.component('goddaw', Chat)
     Vue.use(VTooltip)
   }
 }
