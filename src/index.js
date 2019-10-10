@@ -29,8 +29,9 @@ const Plugin = {
      * Sets custom component name (if provided)
      */
     Vue.component(this.componentName, Launcher)
-    Vue.component('goddaw', Chat)
+    
     Vue.use(VTooltip)
+    //Vue.component('goddaw', Chat)
   }
 }
 
