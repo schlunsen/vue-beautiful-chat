@@ -1,6 +1,6 @@
 import Launcher from './Launcher.vue'
 import VTooltip from 'v-tooltip'
-import Chat from './Chat.vue'
+//import Chat from './Chat.vue'
 
 const defaultComponentName = 'beautiful-chat'
 
