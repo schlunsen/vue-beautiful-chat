@@ -31,10 +31,10 @@
 <script>
 import { WSController } from "./WSController.js";
 
-import CloseIcon from "./assets/close-icon.png";
-import OpenIcon from "./assets/logo-no-bg.svg";
-import FileIcon from "./assets/file.svg";
-import CloseIconSvg from "./assets/close.svg";
+const CloseIcon = require("./assets/close-icon.png");
+const OpenIcon = require("./assets/logo-no-bg.svg");
+const FileIcon = require("./assets/file.svg");
+const CloseIconSvg = require("./assets/close.svg")
 
 export default {
   name: "chat",
